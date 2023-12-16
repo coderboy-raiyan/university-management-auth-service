@@ -6,6 +6,10 @@ Welcome to the University Management API Gateway project
 
 This GitHub repository hosts a comprehensive tutorial and project for building a University Management API Gateway. Whether you're a beginner or an experienced developer, this project offers step-by-step instructions, code examples, and best practices to guide you through the process. By the end of this hands-on tutorial, you'll have a functional API Gateway that includes integration with two essential services: um-auth (University Management Auth Service) and um-core (University Management Core Service).
 
+### ERD Diagram
+
+[![ERD Diagram](https://i.ibb.co/LpfTH61/University-Management-ERD.jpg)](https://miro.com/app/board/uXjVNKoC4eI=/?share_link_id=347962759423)
+
 ### What You'll Learn:
 
 - Setting up a Node.js project structure.
