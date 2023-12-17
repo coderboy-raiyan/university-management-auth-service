@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { HydratedDocument, Model } from 'mongoose'
 
 export interface IUser {

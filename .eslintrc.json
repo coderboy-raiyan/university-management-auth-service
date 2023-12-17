@@ -13,7 +13,10 @@
   ],
 
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "no-console": "warn",
+    "no-unused-expressions": "error",
+    "no-unreachable": "error"
   },
 
   "env": {
