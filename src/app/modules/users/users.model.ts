@@ -8,10 +8,9 @@ const userSchema = new mongoose.Schema<IUser, IUserModel, IUserMethods>(
       required: true,
       unique: true,
     },
-    roll: {
+    role: {
       type: String,
       required: true,
-      unique: true,
     },
     password: {
       type: String,

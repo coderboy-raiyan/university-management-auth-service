@@ -2,7 +2,7 @@ import { HydratedDocument, Model } from 'mongoose'
 
 export interface IUser {
   id: string
-  roll: string
+  role: string
   password: string
 }
 
