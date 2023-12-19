@@ -1,18 +1,16 @@
 /* eslint-disable no-unused-vars */
-import { HydratedDocument, Model } from 'mongoose'
+import { HydratedDocument, Model } from 'mongoose';
 
 export interface IUser {
-  id: string
-  role: string
-  password: string
+    id: string;
+    role: string;
+    password: string;
 }
 
 export interface IUserMethods {
-  fullName(): string
+    fullName(): string;
 }
 
 export interface IUserModel extends Model<IUser, object, IUserMethods> {
-  createWithFullName(
-    name: string,
-  ): Promise<HydratedDocument<IUser, IUserMethods>>
+    createWithFullName(name: string): Promise<HydratedDocument<IUser, IUserMethods>>;
 }
