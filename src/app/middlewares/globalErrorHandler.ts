@@ -7,10 +7,17 @@ import config from '../../config';
 import handleMongoValidationError from '../../errors/handleMongoValidationError';
 import { IGenericErrorResponse } from '../../interfaces/common';
 import { IGenericErrorMessage } from '../../interfaces/error';
+import { errorLogger } from '../../shared/logger';
 import ApiError from './../../errors/ApiError';
 
 // Global error handler
 const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
+    if (config.node_env === 'development') {
+        console.log('GlobalErrorHandler ', err);
+    } else {
+        errorLogger.error('GlobalErrorHandler ', err);
+    }
+
     let statusCode: number = 500;
     let message = 'Something went wrong!!';
     let errorMessages: IGenericErrorMessage[] = [];

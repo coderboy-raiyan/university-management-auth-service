@@ -19,7 +19,13 @@ const logger = createLogger({
     transports: [
         new transports.Console(),
         new DailyRotateFile({
-            filename: path.join(process.cwd(), 'logs', 'winston', 'success', '%DATE%-success.log'),
+            filename: path.join(
+                process.cwd(),
+                'logs',
+                'winston',
+                'successes',
+                '%DATE%-success.log',
+            ),
             datePattern: 'YYYY-DD-MM-HH',
             zippedArchive: true,
             maxSize: '20m',
@@ -35,7 +41,7 @@ const errorLogger = createLogger({
     transports: [
         new transports.Console(),
         new DailyRotateFile({
-            filename: path.join(process.cwd(), 'logs', 'winston', 'error', '%DATE%-error.log'),
+            filename: path.join(process.cwd(), 'logs', 'winston', 'errors', '%DATE%-error.log'),
             datePattern: 'YYYY-DD-MM-HH',
             zippedArchive: true,
             maxSize: '20m',
