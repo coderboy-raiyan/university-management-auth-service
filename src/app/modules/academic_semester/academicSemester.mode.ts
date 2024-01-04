@@ -1,4 +1,6 @@
+import httpStatus from 'http-status';
 import mongoose from 'mongoose';
+import ApiError from '../../../errors/ApiError';
 import {
     academicSemesterCodes,
     academicSemesterMonths,
@@ -44,6 +46,14 @@ const academicSemesterSchema = new mongoose.Schema<
     },
     { timestamps: true },
 );
+
+academicSemesterSchema.pre('save', async function (next) {
+    const isExists = await AcademicSemesterModel.findOne({ title: this.title, year: this.year });
+    if (isExists) {
+        throw new ApiError(httpStatus.CONFLICT, 'Academic Semester is already exists!');
+    }
+    next();
+});
 
 const AcademicSemesterModel = mongoose.model<IAcademicSemester, IAcademicSemesterModel>(
     'AcademicSemester',
