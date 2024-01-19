@@ -6,24 +6,24 @@
     "auditLog": "F:\\university-management-auth-service\\logs\\winston\\successes\\.46f08d511cc6b25a392f57fbcd4e6c315e0cb75a-audit.json",
     "files": [
         {
-            "date": 1704361777061,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-04-01-15-success.log",
-            "hash": "21805df9f83bc11a482523574503ea2739697565d667cfdd9fd59bd0d3b33add"
+            "date": 1705656041039,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-19-01-15-success.log",
+            "hash": "2fa963c6923104dd79a32cd797a525b4fac3175e356e77795d92e3ea995313bb"
         },
         {
-            "date": 1704362686991,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-04-01-16-success.log",
-            "hash": "855699c5514e10330dd362abc76c27600dca654808d8add29ec3da91caa707cf"
+            "date": 1705658507041,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-19-01-16-success.log",
+            "hash": "411713b7bbfe75a6e5e5635ac01618953395cc0c1fddb9e3b4da2e2bf31fd4f2"
         },
         {
-            "date": 1704367346019,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-04-01-17-success.log",
-            "hash": "46db6cda02156251e250e4d15331b0108598cf676f04e89b3dcaf75d05103bf9"
+            "date": 1705664267064,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-19-01-17-success.log",
+            "hash": "7fda3b6488c49bac67f045d758bfb13ac67bd6757cae6b99807353849405067b"
         },
         {
-            "date": 1704369788566,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-04-01-18-success.log",
-            "hash": "837dbae68bfd42d33f0337c0934e580c64159cafc1a82bc5d4d5479ab3cbb134"
+            "date": 1705665632182,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\successes\\2024-19-01-18-success.log",
+            "hash": "ae3514878f9103411c4375e52a15c3d32f365c02f73f2d53aa2b22de93c2ac57"
         }
     ],
     "hashType": "sha256"

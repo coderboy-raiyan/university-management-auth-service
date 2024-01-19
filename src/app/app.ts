@@ -1,5 +1,6 @@
 import cors from 'cors';
-import express, { Application, Request, Response } from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
+import httpStatus from 'http-status';
 import globalErrorHandler from './middlewares/globalErrorHandler';
 import routes from './routes';
 
@@ -18,5 +19,21 @@ app.get('/', (req: Request, res: Response) => {
 
 // Global Error handler
 app.use(globalErrorHandler);
+
+// Page not found handler
+
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
+app.use((req: Request, res: Response, next: NextFunction) => {
+    return res.status(httpStatus.NOT_FOUND).json({
+        success: false,
+        message: 'Not Found',
+        errorMessages: [
+            {
+                path: req.originalUrl,
+                message: 'API not found',
+            },
+        ],
+    });
+});
 
 export default app;

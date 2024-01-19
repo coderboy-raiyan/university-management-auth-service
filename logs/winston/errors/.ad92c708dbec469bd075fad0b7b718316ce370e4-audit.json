@@ -6,24 +6,24 @@
     "auditLog": "F:\\university-management-auth-service\\logs\\winston\\errors\\.ad92c708dbec469bd075fad0b7b718316ce370e4-audit.json",
     "files": [
         {
-            "date": 1704361777064,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-04-01-15-error.log",
-            "hash": "d0a6c91e2577ac6b3f6f7f3088819e51937019023443122c97de4cbef468325f"
+            "date": 1705656041048,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-19-01-15-error.log",
+            "hash": "0089c11d662379ae9795d0d142ed1173b54d470c6ca99f19bebf1fb1259f2e1a"
         },
         {
-            "date": 1704362472424,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-04-01-16-error.log",
-            "hash": "342024a151c37200cadf8e7d0b2db406eae880cfecef78c6afc9b8b9453c61fb"
+            "date": 1705658507046,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-19-01-16-error.log",
+            "hash": "fff09acd9a93a876e9e04f91df49a161a2905ea777d4b796be549b23d2591a71"
         },
         {
-            "date": 1704367346023,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-04-01-17-error.log",
-            "hash": "b54e37d7d9c72460850424428571dc92dc7379034b144cde5ce3c318bb99be64"
+            "date": 1705664267067,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-19-01-17-error.log",
+            "hash": "9973af79d06996c998f11021d84af9bf204ac305263737364895f66321b71799"
         },
         {
-            "date": 1704369788570,
-            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-04-01-18-error.log",
-            "hash": "6be720848929f1334c1406fe42e760b8fe6250bae71d5e6c1d0fa91cb543ca24"
+            "date": 1705665632187,
+            "name": "F:\\university-management-auth-service\\logs\\winston\\errors\\2024-19-01-18-error.log",
+            "hash": "2eef77bed86b667239940968daeb2cceb0544a5f80a6041f9f066c50d2575590"
         }
     ],
     "hashType": "sha256"

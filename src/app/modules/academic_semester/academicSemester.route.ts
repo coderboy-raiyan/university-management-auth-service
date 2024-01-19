@@ -6,6 +6,8 @@ import academicSemesterValidations from './academicSemester.validation';
 
 const academicSemesterRoutes = Router();
 
+academicSemesterRoutes.get('/', academicSemesterControllers.getAllSemesterController);
+
 academicSemesterRoutes.post(
     '/create-semester',
     validateRequest(academicSemesterValidations.createAcademicSemesterZodSchema),
