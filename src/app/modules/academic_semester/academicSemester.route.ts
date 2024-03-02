@@ -8,6 +8,11 @@ const academicSemesterRoutes = Router();
 
 academicSemesterRoutes.get('/', academicSemesterControllers.getAllSemesterController);
 academicSemesterRoutes.get('/:id', academicSemesterControllers.getSingleSemesterController);
+academicSemesterRoutes.patch(
+    '/:id',
+    validateRequest(academicSemesterValidations.updateAcademicSemesterZodSchema),
+    academicSemesterControllers.updateSemesterController,
+);
 
 academicSemesterRoutes.post(
     '/create-semester',

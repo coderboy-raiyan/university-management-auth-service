@@ -36,10 +36,22 @@ const getAllSemesterController = catchAsync(async (req: Request, res: Response) 
 const getSingleSemesterController = catchAsync(async (req: Request, res: Response) => {
     const { id } = req.params;
 
-    const result = await academicSemesterServices.getSingleSemesters(id);
+    const result = await academicSemesterServices.getSingleSemester(id);
     sendResponse<IAcademicSemester>(res, {
         success: true,
-        message: 'Academic semesters retrieved successfully',
+        message: 'Academic semester retrieved successfully',
+        statusCode: httpStatus.OK,
+        data: result,
+    });
+});
+const updateSemesterController = catchAsync(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const updateData = req.body;
+
+    const result = await academicSemesterServices.updateSemester(id, updateData);
+    sendResponse<IAcademicSemester>(res, {
+        success: true,
+        message: 'Academic semesters updated successfully',
         statusCode: httpStatus.OK,
         data: result,
     });
@@ -49,6 +61,7 @@ const academicSemesterControllers = {
     createSemesterController,
     getAllSemesterController,
     getSingleSemesterController,
+    updateSemesterController,
 };
 
 export default academicSemesterControllers;

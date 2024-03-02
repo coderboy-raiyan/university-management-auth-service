@@ -1,0 +1,29 @@
+Sat Mar 02 2024 17:18:26 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Sat Mar 02 2024 17:20:23 [error] error: GlobalErrorHandler  Invalid Semester code
+Sat Mar 02 2024 17:21:26 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Sat Mar 02 2024 17:21:48 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Sat Mar 02 2024 17:22:50 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
