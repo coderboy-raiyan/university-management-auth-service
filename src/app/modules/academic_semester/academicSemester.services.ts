@@ -4,7 +4,10 @@ import ApiError from '../../../errors/ApiError';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import paginationHelpers from './../../../helpers/paginationHelper';
-import { academicSemesterTitleCodeMapper } from './academicSemester.constant';
+import {
+    academicSemesterSearchAbleFields,
+    academicSemesterTitleCodeMapper,
+} from './academicSemester.constant';
 import { IAcademicSemester, IAcademicSemesterFilters } from './academicSemester.interface';
 import AcademicSemesterModel from './academicSemester.mode';
 
@@ -29,8 +32,8 @@ const getAllSemesters = async (
     if (sortBy && sortOrder) {
         sortOptions[sortBy] = sortOrder;
     }
-    const { searchTerm } = filters;
-    const academicSemesterSearchAbleFields = ['title', 'code', 'year'];
+    const { searchTerm, ...filtersData } = filters;
+
     const andConditions = [];
 
     if (searchTerm) {
@@ -40,6 +43,14 @@ const getAllSemesters = async (
                     $regex: searchTerm,
                     $options: 'i',
                 },
+            })),
+        });
+    }
+
+    if (Object.keys(filtersData).length) {
+        andConditions.push({
+            $and: Object.entries(filtersData).map(([key, value]) => ({
+                [key]: value,
             })),
         });
     }

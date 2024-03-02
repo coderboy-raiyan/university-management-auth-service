@@ -4,6 +4,7 @@ import { PaginationFields } from '../../../constants/pagination';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
+import { academicSemesterFilterAbleFields } from './academicSemester.constant';
 import { IAcademicSemester } from './academicSemester.interface';
 import academicSemesterServices from './academicSemester.services';
 
@@ -21,7 +22,7 @@ const createSemesterController = catchAsync(async (req: Request, res: Response) 
 
 const getAllSemesterController = catchAsync(async (req: Request, res: Response) => {
     const paginationOptions = pick(req.query, PaginationFields);
-    const filters = pick(req.query, ['searchTerm', 'title', 'code', 'year']);
+    const filters = pick(req.query, academicSemesterFilterAbleFields);
 
     const result = await academicSemesterServices.getAllSemesters(paginationOptions, filters);
     sendResponse<IAcademicSemester[]>(res, {
