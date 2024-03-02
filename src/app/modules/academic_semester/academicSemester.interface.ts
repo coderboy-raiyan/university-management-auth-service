@@ -20,7 +20,7 @@ export type IAcademicSemesterCodes = '01' | '02' | '03';
 
 export interface IAcademicSemester {
     title: IAcademicSemesterTitles;
-    year: number;
+    year: string;
     code: IAcademicSemesterCodes;
     startMonth: IAcademicSemesterMonths;
     endMonth: IAcademicSemesterMonths;
@@ -34,3 +34,7 @@ export interface IAcademicSemesterModel
     extends Model<IAcademicSemester, object, IAcademicSemesterMethods> {
     // put static methods here
 }
+
+export type IAcademicSemesterFilters = {
+    searchTerm: string;
+};

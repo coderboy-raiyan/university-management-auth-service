@@ -1,5 +1,6 @@
-function pick<T extends Record<string, unknown>, k extends keyof T>(obj: T, keys: k[]): Partial<T> {
-    const modifiedObj: Partial<T> = {};
+/* eslint-disable @typescript-eslint/no-explicit-any */
+function pick(obj: any, keys: string[]) {
+    const modifiedObj: any = {};
 
     for (const key of keys) {
         if (obj && Object.hasOwnProperty.call(obj, key)) {
