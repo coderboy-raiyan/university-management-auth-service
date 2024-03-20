@@ -35,7 +35,7 @@ const updateAcademicSemesterZodSchema = z
             endMonth: z.enum([...academicSemesterMonths] as [string, ...string[]]).optional(),
         }),
     })
-    .refine(data => (data.body.title && data.body.code) || (!data.body.title && !data.body.code), {
+    .refine(data => data.body.title && data.body.code, {
         message: 'Either both title and code should be provided or neither',
     });
 

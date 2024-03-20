@@ -1,0 +1,28 @@
+Wed Mar 20 2024 21:10:57 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Wed Mar 20 2024 21:12:1 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Wed Mar 20 2024 21:12:7 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+Wed Mar 20 2024 21:14:38 [error] error: GlobalErrorHandler  [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
