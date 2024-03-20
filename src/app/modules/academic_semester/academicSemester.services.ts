@@ -9,7 +9,7 @@ import {
     academicSemesterTitleCodeMapper,
 } from './academicSemester.constant';
 import { IAcademicSemester, IAcademicSemesterFilters } from './academicSemester.interface';
-import AcademicSemesterModel from './academicSemester.mode';
+import AcademicSemesterModel from './academicSemester.model';
 
 const createSemester = async (payload: IAcademicSemester): Promise<IAcademicSemester> => {
     if (academicSemesterTitleCodeMapper[payload?.title] !== payload.code) {
