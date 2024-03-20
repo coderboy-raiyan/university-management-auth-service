@@ -20,4 +20,6 @@ academicSemesterRoutes.post(
     academicSemesterControllers.createSemesterController,
 );
 
+academicSemesterRoutes.delete('/:id', academicSemesterControllers.deleteSemesterController);
+
 export default academicSemesterRoutes;

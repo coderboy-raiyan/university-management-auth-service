@@ -96,11 +96,18 @@ const updateSemester = async (
     return result;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const deleteSemester = async (id: string): Promise<IAcademicSemester | any> => {
+    const result = await AcademicSemesterModel.findByIdAndDelete(id);
+    return result;
+};
+
 const academicSemesterServices = {
     createSemester,
     getAllSemesters,
     getSingleSemester,
     updateSemester,
+    deleteSemester,
 };
 
 export default academicSemesterServices;
